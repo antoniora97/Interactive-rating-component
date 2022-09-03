@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+.puntuaciones, .thank-you {
+    background-color: hsl(213, 19%, 18%);
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 2em;
+}
+
+.puntuaciones .star {
+    background-color: hsl(216, 12%, 54%);
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+}
+
+.puntuaciones h1, .thank-you h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0.5em;
+}
+
+.puntuaciones p, .thank-you p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1.5em;
+    font-size: 15px;
+}
+
+.puntuaciones .puntos {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.puntuaciones .puntos .punto {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(216, 12%, 54%);
+    transition: 0.3s;
+    color: hsl(0, 0%, 100%);
+}
+
+.puntuaciones .puntos .punto:hover {
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.puntuaciones .puntos .punto:focus {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(216, 12%, 8%);
+}
+
+.btn-submit {
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 0.9em;
+    border-radius: 1.5em;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 2px;
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you img {
+    margin-bottom: 1.5em;
+}
+
+.thank-you .resultado {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(25, 97%, 53%);
+    padding: 0.5em 1em 0.4em 1em;
+    border-radius: 30px;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.thank-you p {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
