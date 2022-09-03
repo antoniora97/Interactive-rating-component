@@ -98,13 +98,12 @@ body {
     margin-bottom: 1.5em;
 }
 
-.thank-you .resultado {
+.thank-you #resultado {
     background-color: hsl(216, 12%, 54%);
-    color: hsl(25, 97%, 53%);
+    color: hsl(25, 90%, 73%);
     padding: 0.5em 1em 0.4em 1em;
     border-radius: 30px;
     width: fit-content;
-    font-weight: bold;
 }
 
 .thank-you p {
