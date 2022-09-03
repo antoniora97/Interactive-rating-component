@@ -27,7 +27,7 @@ thankYouSubmit.addEventListener("click", () => {
 });
 
 puntosContainer[0].addEventListener("click", (event) => {
-    puntoSeleccionado = event.target.innerText;
+    puntoSeleccionado = event.target.innerHTML;
 })
 
 puntos.forEach( (valor) => {
