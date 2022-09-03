@@ -114,3 +114,9 @@ body {
 .hidden {
     display: none;
 }
+
+@media (min-width: 400px) {
+    .puntuaciones, .thank-you {
+        width: 400px;
+    }
+}

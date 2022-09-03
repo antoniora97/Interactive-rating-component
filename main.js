@@ -16,10 +16,10 @@ thankYouSubmit.addEventListener("click", () => {
     puntuaciones.classList.remove("hidden");
     //puntuaciones.classList.add("puntuaciones");
     thankYou.classList.add("hidden");
-})
+});
 
 puntos.forEach( (valor) => {
     valor.addEventListener("click", () => {
         parrafoResultado.innerHTML = `You selected ${valor.innerHTML} of 5.`
     })
-})
+});
