@@ -4,19 +4,31 @@ const puntuacionesSubmit = document.getElementById("submit");
 const thankYouSubmit = document.getElementById("rate-again");
 const parrafoResultado = document.getElementById("resultado");
 const puntos = document.querySelectorAll(".punto");
+const puntosContainer = document.getElementsByClassName("puntos");
+
+var puntoSeleccionado = 0;
 
 // Hace desaparecer el contenedor "puntuaciones" y aparecer el contenedor "thank-you"
 puntuacionesSubmit.addEventListener("click", () => {
-    //puntuaciones.classList.remove("puntuaciones");
-    puntuaciones.classList.add("hidden");
-    thankYou.classList.remove("hidden");
+    if (puntoSeleccionado !== 0) {
+        //puntuaciones.classList.remove("puntuaciones");
+        puntuaciones.classList.add("hidden");
+        thankYou.classList.remove("hidden");
+    } else {
+        alert("Debes seleccionar una puntuación.")
+    }
 });
 
 thankYouSubmit.addEventListener("click", () => {
     puntuaciones.classList.remove("hidden");
     //puntuaciones.classList.add("puntuaciones");
     thankYou.classList.add("hidden");
+    puntoSeleccionado = 0;
 });
+
+puntosContainer[0].addEventListener("click", (event) => {
+    puntoSeleccionado = event.target.innerText;
+})
 
 puntos.forEach( (valor) => {
     valor.addEventListener("click", () => {
